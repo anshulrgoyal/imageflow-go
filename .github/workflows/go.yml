@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Download staticlib
-        run: curl https://github.com/anshulrgoyal/imageflow/releases/download/v1.4.0-rc40/libimageflow.a -o libimageflow.a
+        run: curl https://github.com/anshulrgoyal/imageflow/releases/download/v1.4.0-rc40/libimageflow.a -O
 
       - name: Test
         run: go test -ldflags=\"-extldflags=-static\" -v
