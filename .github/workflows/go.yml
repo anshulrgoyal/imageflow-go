@@ -22,6 +22,7 @@ jobs:
 
       - name: Download staticlib
         run: curl -L https://github.com/anshulrgoyal/imageflow/releases/download/v1.4.0-rc40/libimageflow.a > libimageflow.a
-
+      - name: Download Image
+        run: curl -L https://jpeg.org/images/jpeg2000-home.jpg > image.jpg
       - name: Test
         run: go test -ldflags=\"-extldflags=-static\" -v
