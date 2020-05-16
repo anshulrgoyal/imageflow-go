@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Download staticlib
-        run: curl -L https://github.com/anshulrgoyal/imageflow/releases/download/v1.4.0-rc40/libimageflow.a > libimageflow.a
+        run: curl -L https://github.com/anshulrgoyal/imageflow/releases/download/v1.4.0-rc40/libimageflow_linux.zip > libimageflow.a
       - name: Download Image
         run: curl -L https://jpeg.org/images/jpeg2000-home.jpg > image.jpg
       - name: Test
